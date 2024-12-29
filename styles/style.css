@@ -1,0 +1,44 @@
+*, *::after, *::before {
+    box-sizing:border-box;  
+  }
+
+  :root {
+	--color-text:#040316;
+	--color-background:#FBE5F2;
+	--color-accent: #443DFF;
+	--color-pink: #D35598;
+	--color-purple: #A19EFF;
+}
+
+
+@font-face {
+    font-family: 'ClashDisplay-Semibold';
+    src: url('../fonts/ClashDisplay-Semibold.woff2') format('woff2'),
+         url('../fonts/ClashDisplay-Semibold.woff') format('woff'),
+         url('../fonts/ClashDisplay-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+  }
+
+
+*{
+	margin: 0;
+}
+
+body{
+	font-family: 'ClashDisplay-Semibold' , Helvetica ;
+	color:var(--color-text);
+	background-color: var(--color-background);
+}
+
+main{
+	padding: 1.3em;
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.3em;
+}
+
+h1{
+    
+}
