@@ -327,6 +327,10 @@ section:nth-of-type(3) article img {
 	margin-bottom: var(--size-4xl);
 }
 
+section:nth-of-type(3) article:nth-of-type(2) img{
+	width: 100%;
+}
+
 section:nth-of-type(3) article h3  {
 	color: var(--color-pink);
 }
