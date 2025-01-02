@@ -72,6 +72,7 @@ body{
 
 	color: var(--color-text);
 	background-color: var(--color-background);
+	margin-bottom: var(--size-4xl);
 }
 
 img,svg {
@@ -283,7 +284,7 @@ section:nth-of-type(2) p:nth-of-type(2) {
 	margin-top: var(--size-lg);
 }
 
-section:nth-of-type(2) h2{
+section:nth-of-type(2) h2, section:nth-of-type(3) h2{
 	color: var(--color-pink);
 }
 
