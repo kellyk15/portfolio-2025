@@ -306,6 +306,41 @@ section:nth-of-type(2) ul li{
 	border: 3px solid var(--color-pink);
 	padding: 0.5em;
 	border-radius: 25px;
+	color: var(--color-pink);
+}
+
+/* works */
+section:nth-of-type(3) div{
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-7xl);
+}
+section:nth-of-type(3) article{
+	margin-top: var(--size-3xl);
+}
+
+section:nth-of-type(3) article img {
+	width: 50%;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: var(--size-4xl);
+}
+
+section:nth-of-type(3) article h3  {
+	color: var(--color-pink);
+}
+
+section:nth-of-type(3) article a{
+	border-radius: 50px;
+	width: 100%;
+	text-align: center;
+	margin-top: var(--size-sm);
+	transition: background-color 0.3s;
+}
+
+section:nth-of-type(3) article a:hover{
+	background-color: var(--color-purple);
 }
 
 
