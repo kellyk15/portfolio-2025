@@ -384,6 +384,10 @@ section{
 	.homepage article a{
 		margin-top: auto;
 	}
+	
+	.homepage section:nth-of-type(1) img{
+		height: inherit;
+	}
 
 }
 
