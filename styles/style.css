@@ -28,6 +28,16 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Sora-Italic';
+	src: url('../fonts/Sora-Italic.woff2') format('woff2'),
+		 url('../fonts/Sora-Italic.woff') format('woff'),
+		 url('../fonts/Sora-Italic.ttf') format('truetype');
+	font-weight: 400;
+	font-display: swap;
+	font-style: italic;
+  }
+
 :root {
 	--color-text:#260B1F;
 	--color-background:#F4EFE4;
@@ -146,7 +156,7 @@ button, .button{
 	margin-right: auto;
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
-	border: solid 1px red;
+	/* border: solid 1px red; */
 }
 
 .section {
@@ -174,6 +184,25 @@ nav ul{
 	display: block;
 }
 
+.mail {
+	color: var(--color-pink);
+	width: var(--size-2xl);
+	height: var(--size-2xl);
+	display: block;
+}
+
+.linkedin{
+	width: var(--size-2xl);
+	height: var(--size-2xl);
+	display: block;
+}
+
+/* .homepage header nav li:nth-of-type(1){
+	border: 1px solid var(--color-pink);
+	padding: var(--size-xs) var(--size-sm) var(--size-xs) var(--size-sm);
+	border-radius: 50px;
+} */
+
 /* md */
 @media (min-width: 768px) {
 	nav ul{
@@ -191,7 +220,8 @@ nav ul{
 	}
 	
 	nav a:hover{
-		color: var(--color-accent);
+		/* color: var(--color-accent); */
+		color: var(--color-purple);
 	}
 
 	.menu{
@@ -283,6 +313,7 @@ section{
 	border-radius: 6px;
 }
 
+/* styling blok 2 */
 .homepage article:nth-of-type(2){
 	background-color: rgb(161, 158, 255, 0.3);
 	color: var(--color-text);
@@ -299,6 +330,7 @@ section{
 .homepage article:nth-of-type(2) h2{
 	color: var(--color-purple);
 }
+
 
 .homepage article img{
 	width: 75%;
@@ -322,6 +354,10 @@ section{
 	width: 100%;
 	text-align: center;
 	transition: color 0.3s;
+}
+
+.homepage article p {
+	margin-bottom: var(--size-sm);
 }
 
 /* hover */
@@ -371,6 +407,12 @@ section{
 		justify-content: space-between;
 	}
 
+	.homepage article:nth-of-type(2) {
+		display: flex;
+		/* flex-direction: row-reverse; */
+		justify-content: space-between;
+	}
+
 	.homepage article div:nth-of-type(1){
 		width: 50%;
 		margin-bottom: 0;
@@ -379,8 +421,9 @@ section{
 	.homepage article div:nth-of-type(2){
 		display: flex;
 		flex-direction: column;
-		
+		width: 50%;
 	}
+
 	.homepage article a{
 		margin-top: auto;
 	}
@@ -425,7 +468,7 @@ section{
 		font-size: var(--size-3xl);
 	}
 
-	p{
+	p, article a{
 		font-size: var(--size-base);
 	}
 
@@ -458,6 +501,8 @@ section{
 	.homepage article a{
 		margin-top: auto;
 	}
+
+}
 
 /* xl homepage*/
 @media (min-width: 1280px) {
