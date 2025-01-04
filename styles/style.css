@@ -294,7 +294,7 @@ section{
 
 .homepage section:nth-of-type(1) a {
 	margin-top: var(--size-sm);
-	transition: color 0.3s;
+	transition: background-color 0.3s;
 }
 
 .homepage section:nth-of-type(1) a:hover, .homepage section:nth-of-type(2) a:hover {
@@ -353,7 +353,7 @@ section{
 	margin-top: var(--size-lg);
 	width: 100%;
 	text-align: center;
-	transition: color 0.3s;
+	transition: background-color 0.3s;
 }
 
 .homepage article p {
@@ -571,8 +571,14 @@ section{
 	margin-bottom: var(--size-4xl);
 }
 
+.about section:nth-of-type(1) a{
+	margin-top: var(--size-2xl);
+	transition: background-color 0.3s;
+}
 
-
+.about section:nth-of-type(1) a:hover{
+	background-color: var(--color-purple);
+}
 
 
 
@@ -617,6 +623,14 @@ section{
 		margin-bottom: var(--size-8xl);
 	}
 
+	.about section:nth-of-type(1){
+		gap: var(--size-6xl);
+	}
+
+	.about section:nth-of-type(1) a {
+		font-size: var(--size-xl);
+	}
+
 }
 
 /* xl */
@@ -628,6 +642,10 @@ section{
 
 	.about p{
 		font-size: var(--size-xl);
+	}
+
+	.about section:nth-of-type(1){
+		gap: var(--size-6xl);
 	}
 
 }
