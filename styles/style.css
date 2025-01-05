@@ -713,7 +713,7 @@ section{
 	}
 
 	.about section:nth-of-type(1) img{
-		height: max-content;
+		height: fit-content;
 		width: 17em;
 	}
 	
@@ -770,9 +770,6 @@ section{
 	
 
 }
-
-
-
 
 
 
