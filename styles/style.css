@@ -723,7 +723,9 @@ section{
 /* lg */
 @media (min-width: 1024px) {
 	.about section:nth-of-type(1) img{
-		height: fit-content;
+		/* height: fit-content; */
+
+		height: 25em;
 		width: 20em;
 	}
 	
