@@ -801,8 +801,6 @@ section{
 	color: var(--color-pink);
 }
 
-
-
 .play section{
 	margin-bottom: var(--size-2xl);
 }
@@ -816,6 +814,8 @@ section{
 .illustrations img{
 	margin-bottom: var(--size-2xl);
 }
+
+.illustrations img:hover{}
 
 /* md */
 @media (min-width: 768px) {
@@ -832,9 +832,6 @@ section{
 
 	} */
 
-	.play h1{
-		margin-top: var(--size-6xl);
-	}
 
 	.illustrations div{
 		width: 95%;
@@ -845,18 +842,19 @@ section{
 		gap: var(--size-2xl);
 	}
 
-	.play h1{
+	.play h1, .case h1{
 		font-size: var(--size-3xl);
+		margin-top: var(--size-6xl);
 	}
 }
 
 /* xl homepage*/
 @media (min-width: 1280px) {
-	.play h1{
+	.play h1, .case h1{
 		font-size: var(--size-5xl);
 	}
 
-	.play h2{
+	.play h2, .case h2{
 		font-size: var(--size-3xl);
 	}
 	
@@ -867,3 +865,34 @@ section{
 }
 
 
+/* case page styling */
+.case h1, .case h2 {
+	color: var(--color-pink);
+}
+
+
+
+
+/* md */
+@media (min-width: 768px) {
+	.dunkin section:nth-of-type(1){
+		/* margin-top: var(--size-2xl); */
+		margin-top: var(--size-6xl);
+	}
+
+}
+
+/* beyond sleep */
+.beyond div {
+	padding: 2em;
+	background-color: rgb(244, 164, 192, 0.3);
+	border-radius: 6px;
+	margin-top: var(--size-base);
+}
+
+
+
+
+
+
+/* dunkin */
