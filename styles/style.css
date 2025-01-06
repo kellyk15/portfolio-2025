@@ -805,15 +805,19 @@ section{
 	margin-bottom: var(--size-2xl);
 }
 
-.illustrations{
+.illustrations, .illustrations div{
 	display: flex;
 	flex-direction: column;
-	gap: var(--size-2xl);
+	/* gap: var(--size-2xl); */
+}
+
+.illustrations img{
+	margin-bottom: var(--size-2xl);
 }
 
 /* md */
 @media (min-width: 768px) {
-	.illustrations{
+	/* .illustrations{
 		display: flex;
 		max-width: 100%;
 		flex-wrap: wrap;
@@ -824,6 +828,15 @@ section{
 		width: 40%;
 		height: fit-content;
 
+	} */
+
+	.illustrations div{
+		width: 95%;
+	}
+
+	.illustrations {
+		flex-direction: row;
+		gap: var(--size-2xl);
 	}
 }
 
