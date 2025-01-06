@@ -775,7 +775,6 @@ section{
 }
 
 
-
 /* lg */
 @media (min-width: 1024px){
 
@@ -796,5 +795,36 @@ section{
 
 }
 
+/* play pagina */
+
+.play h1, .play h2 {
+	color: var(--color-pink);
+}
+
+.play section{
+	margin-bottom: var(--size-2xl);
+}
+
+.illustrations{
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-2xl);
+}
+
+/* md */
+@media (min-width: 768px) {
+	.illustrations{
+		display: flex;
+		max-width: 100%;
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+
+	.illustrations img{
+		width: 40%;
+		height: fit-content;
+
+	}
+}
 
 
