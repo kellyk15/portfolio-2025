@@ -888,9 +888,13 @@ section{
 	background-color: rgb(244, 164, 192, 0.3);
 	border-radius: 6px;
 	margin-top: var(--size-base);
+	margin-bottom: var(--size-base);
 }
 
-
+.beyond img{
+	margin-right: auto;
+	margin-left: auto;
+}
 
 
 
