@@ -549,7 +549,7 @@ section{
 		font-size: var(--size-lg);
 	}
 	
-	/* .homepage section:nth-of-type(2){
+	.homepage section:nth-of-type(2){
 		display: flex;
 		flex-direction: row;
 	}
@@ -557,12 +557,19 @@ section{
 	.homepage section:nth-of-type(2) article{
 		display: flex;
 		flex-direction: column;
-	} */
+		width: 100%;
+		justify-content: space-between;
+		
+	}
+
+	.homepage section:nth-of-type(2) article div{
+		width: 100%;
+	}
 }
 
 
-
-
+/* IK BEN HIERR RAAAAAAAH 
+3 columns maken wanneer big */
 
 
 
