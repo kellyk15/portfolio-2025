@@ -189,6 +189,13 @@ header {
 
 nav ul{
 	/* display: none; */
+	display: flex;
+	align-items: center;
+	list-style: none;
+	gap: 2em;
+	background-color: var(--color-background);
+
+
 	position:fixed;
 	left:0;
 	right:0;
@@ -196,12 +203,14 @@ nav ul{
 	bottom:0;
 
 	translate:0% 100%;
-	transition:translate .3s;
+	transition:translate .5s;
+	transition-timing-function: cubic-bezier(.17,.67,.83,.67);
 	
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	
 }
 
 nav.toonMenu ul {
@@ -212,9 +221,6 @@ nav.toonMenu ul {
 	gap: 2em;
 }
 
-nav.toonMenu ul{
-	background-color: var(--color-background);
-}
 
 nav a {
 	font-size: var(--size-xl);
@@ -289,7 +295,6 @@ nav a:hover{
 		translate:unset;
 		
 		padding:0;
-		background:none;
 	}
 	
 }

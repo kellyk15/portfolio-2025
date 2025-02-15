@@ -8,21 +8,11 @@ function toggleMenu() {
 }
 
 
+window.onkeydown = handleKeydown;
 
-
-// function toggleMenu(){
-//     var deNav = document.querySelector("nav");
-//     deNav.classList.add
-// }
-
-
-// if (openButton == "true") {
-//     deNav.classList.add("toonMenu");
-//     openButton = "false"
-//     deKnop.classList.add("toonMenu")
-// }
-// else {
-//     deNav.classList.remove("toonMenu");
-//     openButton = "true"  
-//     deKnop.classList.remove("toonMenu")
-// }
+function handleKeydown(event) {
+  if (event.key == "Escape") {
+    var deNav = document.querySelector("nav");
+    deNav.classList.remove("toonMenu");
+  }
+}
