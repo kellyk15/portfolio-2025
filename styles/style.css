@@ -318,7 +318,7 @@ nav a:hover{
 
 /* hero section styling */
 section{
-	gap: var(--size-lg);
+	gap: var(--size-3xl);
 }
 
 .homepage section:nth-of-type(1){
