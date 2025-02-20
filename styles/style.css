@@ -995,7 +995,7 @@ section{
 
 /* md */
 @media (min-width: 768px) {
-	.dunkin section:nth-of-type(1){
+	.case section:nth-of-type(1){
 		/* margin-top: var(--size-2xl); */
 		margin-top: var(--size-6xl);
 	}
@@ -1188,17 +1188,117 @@ img.bord{
 
 /* dunkin */
 
+.dunkin section:nth-of-type(1) div {
+	padding: 2em;
+	background-color: rgb(244, 164, 192, 0.3);
+	border-radius: 6px;
+	margin-top: var(--size-base);
+	margin-bottom: var(--size-base);
+}
+
+img.dunkindonuts{
+	margin-right: auto;
+	margin-left: auto;
+	height: 14em;
+}
+
+.dunkin section:nth-of-type(2){
+	display: flex;
+	flex-direction: column;
+	padding-top: 2em;
+}
+
+.dunkin h3 {
+	color: var(--color-pink);
+	font-size: var(--size-xl);
+}
+
+video {
+    clip-path: inset(1px 1px);
+}
+
+.dunkin a:link {
+	background-color: var(--color-pink);
+	text-decoration: none;
+	display: inline-block;
+	color: var(--color-background);
+	padding: 0.5em 1em;
+	border-radius: 6px;
+	width: fit-content;
+}
+
+/* .dunkin a:visited {
+	background-color: var(--color-purple);
+	text-decoration: none;
+	display: inline-block;
+	color: var(--color-background);
+	padding: 0.5em 1em;
+	border-radius: 6px;
+	width: fit-content;
+} */
+
+.dunkin a:hover{
+	background-color: #ca708f;
+	text-decoration: none;
+	display: inline-block;
+	color: var(--color-background);
+	padding: 0.5em 1em;
+	border-radius: 6px;
+	width: fit-content;
+	transition: 0.3s;
+}
+
+
 /* md */
 @media (min-width: 768px) {
+	img.dunkindonuts{
+		height: 20em;
+	}
+	
+	.dunkin section:nth-of-type(2){
+		flex-direction: row;
+		justify-content: space-between;
+	}
 
+	.dunkin section:nth-of-type(2) div {
+		width: 30%;
+	}
+
+	.dunkin section:nth-of-type(2) hr{
+		display: none;
+	}
+
+	/* video {
+		max-width: 100%;
+		height: auto;
+	  } */
+
+	.dunkin section:nth-of-type(3) div{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.dunkin section:nth-of-type(3) div video{
+		max-width: 15em;
+	}
 }
 
 /* lg */
 @media (min-width: 1024px) {
+	img.dunkindonuts{
+		height: 25em;
+	}
+
+	.dunkin section:nth-of-type(3) div video{
+		max-width: 18em;
+	}
 
 }
 
 /* xl */
 @media (min-width: 1280px) {
-
+	.dunkin section:nth-of-type(3) div video{
+		max-width: 25em;
+	}
 }
