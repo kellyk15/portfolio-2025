@@ -1302,3 +1302,98 @@ video {
 		max-width: 25em;
 	}
 }
+
+
+/* bookfinder */
+.finder img.book{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.finder section:nth-of-type(1) div {
+	padding: 2em;
+	background-color: rgb(244, 164, 192, 0.3);
+	border-radius: 6px;
+	margin-top: var(--size-base);
+	margin-bottom: var(--size-base);
+}
+
+.finder section:nth-of-type(2){
+	display: flex;
+	flex-direction: column;
+	padding-top: 2em;
+}
+
+.finder h3{
+	color: var(--color-pink);
+}
+
+.finder a:link {
+	background-color: var(--color-pink);
+	text-decoration: none;
+	display: inline-block;
+	color: var(--color-background);
+	padding: 0.5em 1em;
+	border-radius: 6px;
+	width: fit-content;
+}
+
+.finder a:hover{
+	background-color: #ca708f;
+	text-decoration: none;
+	display: inline-block;
+	color: var(--color-background);
+	padding: 0.5em 1em;
+	border-radius: 6px;
+	width: fit-content;
+	transition: 0.3s;
+}
+
+
+/* md */
+@media (min-width: 768px) {	
+	img.book{
+		width: 30em;
+	}
+
+	.finder section:nth-of-type(2){
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.finder section:nth-of-type(2) div {
+		width: 30%;
+	}
+
+	.finder section:nth-of-type(2) hr{
+		display: none;
+	}
+
+
+}
+
+/* lg */
+@media (min-width: 1024px) {
+	img.book{
+		width: 40em;
+	}
+
+	.finder section:nth-of-type(3) div, .finder section:nth-of-type(4) div, .finder section:nth-of-type(5) div{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	
+	.finder section:nth-of-type(3) article, .finder section:nth-of-type(4) article, .finder section:nth-of-type(5) article{
+		max-width: 50em;
+		width: 26em;
+	}
+
+}
+
+/* xl */
+@media (min-width: 1280px) {
+
+}
