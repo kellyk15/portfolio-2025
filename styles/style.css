@@ -959,7 +959,7 @@ soft skills
 }
  
 
-.play section:nth-of-type(4) article{
+.play section:nth-of-type(3) article{
 	display: flex;
 	flex-direction: column;
 	gap: 2em;
@@ -1003,13 +1003,13 @@ soft skills
 
 /* lg */
 @media (min-width: 1024px){
-	.play section:nth-of-type(4) article{
+	.play section:nth-of-type(3) article{
 		display: flex;
 		flex-direction: row;
 		gap: 5em;
 	}
 	
-	.play section:nth-of-type(4) div{
+	.play section:nth-of-type(3) div{
 		width: 50%;
 	}
 }
