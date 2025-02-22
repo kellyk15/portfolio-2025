@@ -958,17 +958,12 @@ soft skills
 	color: var(--color-pink);
 }
  
+
 .play section:nth-of-type(4) article{
 	display: flex;
-	gap: 5em;
+	flex-direction: column;
+	gap: 2em;
 }
-
-.play section:nth-of-type(4) div{
-	width: 50%;
-}
-
-
-
 
 
 
@@ -1006,6 +1001,19 @@ soft skills
 	
 }
 
+/* lg */
+@media (min-width: 1024px){
+	.play section:nth-of-type(4) article{
+		display: flex;
+		flex-direction: row;
+		gap: 5em;
+	}
+	
+	.play section:nth-of-type(4) div{
+		width: 50%;
+	}
+}
+
 /* xl homepage*/
 @media (min-width: 1280px) {
 	.play h1, .case h1{
@@ -1023,6 +1031,8 @@ soft skills
 	.play h3 {
 		font-size: var(--size-2xl);
 	}
+
+	
 }
 
 
