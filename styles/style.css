@@ -177,6 +177,8 @@ header {
 	align-items: center;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
+	position: relative;
+	z-index: 1000;
 }
 
 
@@ -186,7 +188,9 @@ header {
 	z-index: 10;
 	background-color: var(--color-background);
 } */
-
+nav{
+	position: absolute;
+}
 nav ul{
 	/* display: none; */
 	display: flex;
@@ -297,6 +301,9 @@ nav a:hover{
 		padding:0;
 	}
 	
+	header{
+		margin-top: 1em;
+	}
 }
 
 
@@ -362,7 +369,7 @@ section{
 	transition: background-color 0.3s;
 }
 
-.homepage section:nth-of-type(1) a:hover, .homepage section:nth-of-type(2) a:hover {
+.homepage section:nth-of-type(1) a:hover, .homepage section:nth-of-type(2) a:hover , .closet a:hover{
 	background-color: var(--color-purple);
 }
 
@@ -394,6 +401,10 @@ section{
 
 .homepage article:nth-of-type(2) a:hover{
 	background-color: var(--color-pink);
+}
+
+.content a:hover{
+	background-color: var(--color-purple);
 }
 
 .homepage article:nth-of-type(2) h2{
@@ -481,6 +492,7 @@ section{
 	animation-fill-mode: forwards;
 }
 
+
 @keyframes appear{
 	0%{
 		opacity: 0%;
@@ -493,7 +505,7 @@ section{
 	}
 }
 
-.homepage article{
+.homepage article, .content img{
 	animation-name: appear;
 	animation-duration: 0.6s;
 	animation-fill-mode: forwards;
@@ -623,7 +635,7 @@ section{
 	.homepage article a{
 		margin-top: auto;
 	}
-	
+
 
 }
 
@@ -1269,6 +1281,8 @@ img.dunkindonuts{
 	margin-right: auto;
 	margin-left: auto;
 	height: 14em;
+	z-index: 2;
+	position: relative;
 }
 
 .dunkin section:nth-of-type(2){
@@ -1465,4 +1479,172 @@ video {
 /* xl */
 @media (min-width: 1280px) {
 
+}
+
+
+/* content */
+.content section:nth-of-type(1) div {
+	padding: 2em;
+	background-color: rgb(244, 164, 192, 0.3);
+	border-radius: 6px;
+	margin-top: var(--size-base);
+	margin-bottom: var(--size-base);
+	position: relative;
+	z-index: 1;
+}
+
+img.content{
+	margin-right: auto;
+	margin-left: auto;
+	height: 14em;
+}
+
+.content section:nth-of-type(2){
+	display: flex;
+	flex-direction: column;
+	padding-top: 2em;
+}
+
+
+
+/* .content a:link {
+	background-color: var(--color-pink);
+	text-decoration: none;
+	display: inline-block;
+	color: var(--color-background);
+	padding: 0.5em 1em;
+	border-radius: 6px;
+	width: fit-content;
+}
+
+
+.content a:hover{
+	background-color: #ca708f;
+	text-decoration: none;
+	display: inline-block;
+	color: var(--color-background);
+	padding: 0.5em 1em;
+	border-radius: 6px;
+	width: fit-content;
+	transition: 0.3s;
+} */
+
+.content-reverse{
+	background-color: rgb(244, 164, 192, 0.3);
+}
+
+.content section:nth-of-type(3){
+	display: flex;
+	flex-direction: column;
+	gap: 4em;
+}
+
+.content article{
+	padding: 2em var(--size-xl);
+	border-radius: 6px;
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-lg);
+}
+
+.content article div{
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-lg);
+}
+
+.content h3{
+	color: var(--color-pink);
+}
+
+
+
+/* md */
+@media (min-width: 768px) {
+	img.content{
+		height: 20em;
+	}
+	
+	.content section:nth-of-type(2){
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.content section:nth-of-type(2) div {
+		width: 30%;
+	}
+
+	.content section:nth-of-type(2) hr{
+		display: none;
+	}
+
+	article.content-normal {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.content article img{
+		width: 40%;
+		height: auto;
+		object-fit: contain;
+	}
+
+	.content article div{
+		width: 50%;
+	}
+	
+	.content-reverse div{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	article.content-reverse{
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+
+	article.content-reverse h2{
+		text-align: right;
+	}
+
+	article.content-reverse p{
+		text-align: justify;
+  		text-align-last: right;
+	}
+
+	.content article{
+		padding: 5em var(--size-6xl);
+	}
+}
+
+/* lg */
+@media (min-width: 1024px) {
+	img.content{
+		height: 25em;
+	}
+
+	
+
+}
+
+/* xl */
+@media (min-width: 1280px) {
+	
+}
+
+
+/* closetfy */
+.closetfyimg{
+	max-height: 30em;
+	object-fit: contain;
+}
+
+#context div{
+	width: 100%;
+}
+
+#context img{
+	width: 100%;
 }
